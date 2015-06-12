@@ -1,0 +1,9 @@
+D:\EduardSoltuzu\VisualStudio\SerialCommunication\SerialCommunication\bin\Debug\SerialCommunication.exe.config
+D:\EduardSoltuzu\VisualStudio\SerialCommunication\SerialCommunication\bin\Debug\SerialCommunication.exe
+D:\EduardSoltuzu\VisualStudio\SerialCommunication\SerialCommunication\bin\Debug\SerialCommunication.pdb
+D:\EduardSoltuzu\VisualStudio\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.csprojResolveAssemblyReference.cache
+D:\EduardSoltuzu\VisualStudio\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.Main.resources
+D:\EduardSoltuzu\VisualStudio\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.Properties.Resources.resources
+D:\EduardSoltuzu\VisualStudio\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.csproj.GenerateResource.Cache
+D:\EduardSoltuzu\VisualStudio\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.exe
+D:\EduardSoltuzu\VisualStudio\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.pdb
