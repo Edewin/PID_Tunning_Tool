@@ -11,6 +11,8 @@ int main()
 
     // else if first char from message is 'C' then set Kp, Ki, Kd, for PID regulator
 
+
+    //Desired Speed must be declared Volatile!!!!
     //char mes1[] = "S,1000";
     char mes1[] = "C,4.00056,2.3,0.02";
     char * buf1;
