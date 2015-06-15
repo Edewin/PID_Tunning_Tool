@@ -114,7 +114,7 @@ namespace SerialCommunication
         {
             try
             {
-                serialPort1.WriteLine(Convert.ToString(setPoint.Value));
+                serialPort1.WriteLine("S," + Convert.ToString(setPoint.Value));
                 textBox1.AppendText("\r\nTX: " + Convert.ToString(setPoint.Value) + Environment.NewLine); 
             }
             catch (Exception ex)
@@ -191,6 +191,29 @@ namespace SerialCommunication
         }
 
 
+
+        #endregion
+
+        #region Write Configurations Button
+
+
+        private void buttonWriteConfigurations_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                serialPort1.WriteLine("C," + Convert.ToString(KpValue.Value) + "," + 
+                                             Convert.ToString(KiValue.Value) + "," + 
+                                             Convert.ToString(KdValue.Value));
+                textBox1.AppendText("\r\nTX: " + Convert.ToString(KpValue.Value) + ", " 
+                                                + Convert.ToString(KiValue.Value) + ", "
+                                                + Convert.ToString(KdValue.Value) + ", "
+                                                + Environment.NewLine);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
         #endregion
 

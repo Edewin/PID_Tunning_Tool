@@ -214,7 +214,7 @@
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(264, 0);
+            this.chart1.Location = new System.Drawing.Point(258, 0);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
             series1.ChartArea = "ChartArea1";
@@ -228,7 +228,7 @@
             series2.Name = "RealValue";
             this.chart1.Series.Add(series1);
             this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(784, 601);
+            this.chart1.Size = new System.Drawing.Size(790, 601);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
             // 
@@ -242,7 +242,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(264, 601);
+            this.groupBox2.Size = new System.Drawing.Size(258, 601);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             // 
@@ -270,6 +270,7 @@
             this.buttonWriteConfigurations.TabIndex = 6;
             this.buttonWriteConfigurations.Text = "Write Configurations";
             this.buttonWriteConfigurations.UseVisualStyleBackColor = true;
+            this.buttonWriteConfigurations.Click += new System.EventHandler(this.buttonWriteConfigurations_Click);
             // 
             // KdValue
             // 
