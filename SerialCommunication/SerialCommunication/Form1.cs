@@ -106,10 +106,12 @@ namespace SerialCommunication
         #endregion
 
 
-        #region Buttons: Write, Connect, Disconnect, Pause
+        #region Buttons: Write, Connect, Disconnect, Pause, Write Configurations
 
 
         #region Write Button
+
+
         private void buttonWrite_Click(object sender, EventArgs e)
         {
             try
@@ -185,15 +187,6 @@ namespace SerialCommunication
 
         #endregion
 
-        private void textBoxWriteData_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-        #endregion
-
         #region Write Configurations Button
 
 
@@ -201,10 +194,10 @@ namespace SerialCommunication
         {
             try
             {
-                serialPort1.WriteLine("C," + Convert.ToString(KpValue.Value) + "," + 
-                                             Convert.ToString(KiValue.Value) + "," + 
+                serialPort1.WriteLine("C," + Convert.ToString(KpValue.Value) + "," +
+                                             Convert.ToString(KiValue.Value) + "," +
                                              Convert.ToString(KdValue.Value));
-                textBox1.AppendText("\r\nTX: " + Convert.ToString(KpValue.Value) + ", " 
+                textBox1.AppendText("\r\nTX: " + Convert.ToString(KpValue.Value) + ", "
                                                 + Convert.ToString(KiValue.Value) + ", "
                                                 + Convert.ToString(KdValue.Value) + ", "
                                                 + Environment.NewLine);
@@ -214,6 +207,9 @@ namespace SerialCommunication
                 MessageBox.Show(ex.Message);
             }
         }
+
+        #endregion
+
 
         #endregion
 

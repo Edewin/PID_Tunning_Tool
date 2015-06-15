@@ -152,6 +152,7 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "9600",
+            "19200",
             "115200"});
             this.comboBox2.Location = new System.Drawing.Point(87, 19);
             this.comboBox2.Name = "comboBox2";
