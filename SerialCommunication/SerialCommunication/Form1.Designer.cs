@@ -82,7 +82,6 @@
             // 
             // setPoint
             // 
-            this.setPoint.DecimalPlaces = 4;
             this.setPoint.Increment = new decimal(new int[] {
             10,
             0,
