@@ -7,3 +7,12 @@ D:\EduardSoltuzu\VisualStudio\SerialCommunication\SerialCommunication\obj\Debug\
 D:\EduardSoltuzu\VisualStudio\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.csproj.GenerateResource.Cache
 D:\EduardSoltuzu\VisualStudio\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.exe
 D:\EduardSoltuzu\VisualStudio\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.pdb
+D:\GitHub\Pid_Tunning_Tool\SerialCommunication\SerialCommunication\bin\Debug\SerialCommunication.exe.config
+D:\GitHub\Pid_Tunning_Tool\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.exe
+D:\GitHub\Pid_Tunning_Tool\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.pdb
+D:\GitHub\Pid_Tunning_Tool\SerialCommunication\SerialCommunication\bin\Debug\SerialCommunication.exe
+D:\GitHub\Pid_Tunning_Tool\SerialCommunication\SerialCommunication\bin\Debug\SerialCommunication.pdb
+D:\GitHub\Pid_Tunning_Tool\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.csprojResolveAssemblyReference.cache
+D:\GitHub\Pid_Tunning_Tool\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.Main.resources
+D:\GitHub\Pid_Tunning_Tool\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.Properties.Resources.resources
+D:\GitHub\Pid_Tunning_Tool\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.csproj.GenerateResource.Cache

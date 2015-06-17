@@ -39,24 +39,33 @@ namespace SerialCommunication
 
         private void serialPort1_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
         {
-            bufferSerial = serialPort1.ReadExisting();
+            bufferSerial = serialPort1.ReadLine();
             this.Invoke(new EventHandler(displayText));
         }
 
 
         private void displayText(object sender, EventArgs e) 
         {
-            if (checkPause.Checked)
+            try
             {
-                textBox1.AppendText(Environment.NewLine + "RX:" + bufferSerial);
+                if (checkPause.Checked)
+                {
+                    //textBox1.AppendText(Environment.NewLine + "RX:" + bufferSerial);
+                }
+                else
+                {
+                    // chart1.Series[0].Points.AddXY(xCounter, Convert.ToDouble(Convert.ToString(setPoint.Value)));
+                     chart1.Series[1].Points.AddXY(xCounter, Convert.ToDouble(bufferSerial));
+                    xCounter += 0.1;
+                    textBox1.AppendText(Environment.NewLine + "RX:" + bufferSerial);
+                }
             }
-            else
+            catch (Exception)
             {
-                chart1.Series[0].Points.AddXY(xCounter, Convert.ToDouble(Convert.ToString(setPoint.Value)));
-                chart1.Series[1].Points.AddXY(xCounter, Convert.ToDouble(bufferSerial));
-                xCounter+=0.1;
-                textBox1.AppendText(Environment.NewLine + "RX:" + bufferSerial);
+                
+                
             }
+           
            
         }
 
@@ -145,11 +154,13 @@ namespace SerialCommunication
         #endregion
 
         #region Disconnect Button
+
         private void buttonDisconnect_Click(object sender, EventArgs e)
         {
             try
             {
                 serialPort1.Close();
+                serialPort1 = null;
                 textBox1.AppendText("\r\nDisconnected");
             }
             catch (Exception ex)
