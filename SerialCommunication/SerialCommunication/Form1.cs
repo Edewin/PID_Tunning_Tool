@@ -55,7 +55,13 @@ namespace SerialCommunication
                 else
                 {
                     // chart1.Series[0].Points.AddXY(xCounter, Convert.ToDouble(Convert.ToString(setPoint.Value)));
-                     chart1.Series[1].Points.AddXY(xCounter, Convert.ToDouble(bufferSerial));
+                    chart1.Series[1].Points.AddXY(xCounter, Convert.ToDouble(bufferSerial));
+                    chart1.ChartAreas[0].AxisY.Maximum = Convert.ToDouble(bufferSerial) + 4000;
+                    chart1.ChartAreas[0].AxisY.Minimum = Convert.ToDouble(bufferSerial) - 4000;
+                    if (xCounter-10 > 0)
+                    {
+                        chart1.ChartAreas[0].AxisX.Minimum = xCounter - 10;
+                    }
                     xCounter += 0.1;
                     textBox1.AppendText(Environment.NewLine + "RX:" + bufferSerial);
                 }
