@@ -54,7 +54,7 @@ namespace SerialCommunication
                 }
                 else
                 {
-                    chart1.Series[0].Points.AddXY(xCounter, Convert.ToDouble(Convert.ToString(setPoint.Value)));
+            /*       chart1.Series[0].Points.AddXY(xCounter, Convert.ToDouble(Convert.ToString(setPoint.Value)));
                     chart1.Series[1].Points.AddXY(xCounter, Convert.ToDouble(bufferSerial));
                     chart1.ChartAreas[0].AxisY.Maximum = Convert.ToDouble(bufferSerial) + 4000;
                     chart1.ChartAreas[0].AxisY.Minimum = Convert.ToDouble(bufferSerial) - 4000;
@@ -62,7 +62,7 @@ namespace SerialCommunication
                     {
                         chart1.ChartAreas[0].AxisX.Minimum = xCounter - 10;
                     }
-                    xCounter += 0.1;
+                    xCounter += 0.1;*/
                     textBox1.AppendText(Environment.NewLine + "RX:" + bufferSerial);
                 }
             }
@@ -131,7 +131,9 @@ namespace SerialCommunication
         {
             try
             {
-                serialPort1.WriteLine("S," + Convert.ToString(setPoint.Value));
+                serialPort1.WriteLine("S");
+                serialPort1.WriteLine(Convert.ToString(setPoint.Value));
+                //serialPort1.WriteLine("S" + Convert.ToString(setPoint.Value));
                 textBox1.AppendText("\r\nTX: " + Convert.ToString(setPoint.Value) + Environment.NewLine); 
             }
             catch (Exception ex)
@@ -211,9 +213,13 @@ namespace SerialCommunication
         {
             try
             {
-                serialPort1.WriteLine("C," + Convert.ToString(KpValue.Value) + "," +
-                                             Convert.ToString(KiValue.Value) + "," +
-                                             Convert.ToString(KdValue.Value));
+                serialPort1.WriteLine("C");
+                serialPort1.WriteLine(Convert.ToString(KpValue.Value));
+                serialPort1.WriteLine(Convert.ToString(KiValue.Value));
+                serialPort1.WriteLine(Convert.ToString(KdValue.Value));
+               /* serialPort1.WriteLine("C" + Convert.ToString(KpValue.Value) + 
+                                             Convert.ToString(KiValue.Value) +
+                                             Convert.ToString(KdValue.Value));*/
                 textBox1.AppendText("\r\nTX: " + Convert.ToString(KpValue.Value) + ", "
                                                 + Convert.ToString(KiValue.Value) + ", "
                                                 + Convert.ToString(KdValue.Value) + ", "

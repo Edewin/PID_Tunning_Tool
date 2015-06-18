@@ -16,3 +16,12 @@ D:\GitHub\Pid_Tunning_Tool\SerialCommunication\SerialCommunication\obj\Debug\Ser
 D:\GitHub\Pid_Tunning_Tool\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.Main.resources
 D:\GitHub\Pid_Tunning_Tool\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.Properties.Resources.resources
 D:\GitHub\Pid_Tunning_Tool\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.csproj.GenerateResource.Cache
+D:\EduardSoltuzu\VisualStudio\pid_tunning_tool\SerialCommunication\SerialCommunication\bin\Debug\SerialCommunication.exe.config
+D:\EduardSoltuzu\VisualStudio\pid_tunning_tool\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.exe
+D:\EduardSoltuzu\VisualStudio\pid_tunning_tool\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.pdb
+D:\EduardSoltuzu\VisualStudio\pid_tunning_tool\SerialCommunication\SerialCommunication\bin\Debug\SerialCommunication.exe
+D:\EduardSoltuzu\VisualStudio\pid_tunning_tool\SerialCommunication\SerialCommunication\bin\Debug\SerialCommunication.pdb
+D:\EduardSoltuzu\VisualStudio\pid_tunning_tool\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.csprojResolveAssemblyReference.cache
+D:\EduardSoltuzu\VisualStudio\pid_tunning_tool\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.Main.resources
+D:\EduardSoltuzu\VisualStudio\pid_tunning_tool\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.Properties.Resources.resources
+D:\EduardSoltuzu\VisualStudio\pid_tunning_tool\SerialCommunication\SerialCommunication\obj\Debug\SerialCommunication.csproj.GenerateResource.Cache
