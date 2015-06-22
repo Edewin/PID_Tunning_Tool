@@ -1,16 +1,27 @@
 # PID_Tunning_Tool
 
-/*Ziegler–Nichols_method*/
+/*Zieglerâ€“Nichols_method*/
     kp=((kp*3.3)/(4.5));
     ki=2*kp;
     kd=kp/8;
 
-Ziegler–Nichols method
-Control Type	K_p		K_i		K_d
-	P	0.5 K_u		-		-
-	PI	0.45 K_u	1.2 K_p/T_u	-
-	PD	0.8 K_u		-		K_p T_u/8
-classic PID	0.60 K_u	2 K_p/T_u	K_p T_u/8
-PessenIntegral  0.7 K_u		2.5 K_p/T_u	3 K_p T_u/20
-some overshoot	0.33 K_u	2 K_p/T_u	K_pT_u/3
-no overshoot	0.2 K_u		2 K_p/T_u	K_pT_u/3
+<font size =10>
+<i><b>Zieglerâ€“Nichols method</i></b><br><br>
+<b>Control Type K_p, 	K_i, K_d:</b><br>
+</font>
+
+<font size = 5>
+<b>P:</b>	0.5 * K_u	        -	        -
+
+<b>PI:</b>	0.45 * K_u	1.2 * K_p/T_u	-
+
+<b>PD:</b>	0.8 * K_u,	- ,	K_p * T_u/8
+
+<b>classic PID:</b>	0.60 * K_u,	2 * K_p/T_u,	K_p * T_u/8,
+
+<b>Pessen Integral Rule:</b>	0.7 * K_u,	2.5 * K_p/T_u,	3 * K_p * T_u/20,
+
+<b>some overshoot:</b> 	0.33 * K_u,	2 * K_p/T_u,	K_p * T_u/3,
+
+<b>no overshoot:</b>	0.2 * K_u,	2 * K_p/T_u,	K_p * T_u/3,
+</font>
