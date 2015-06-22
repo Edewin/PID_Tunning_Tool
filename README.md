@@ -1,9 +1,9 @@
 # PID_Tunning_Tool
 
-/*Ziegler–Nichols_method*/
-    kp=((kp*3.3)/(4.5));
-    ki=2*kp;
-    kd=kp/8;
+/*Ziegler–Nichols_method*/ <br>
+    kp=((kp*3.3)/(4.5));<br>
+    ki=2*kp; <br>
+    kd=kp/8; <br>
 
 <font size =10>
 <i><b>Ziegler–Nichols method</i></b><br><br>
