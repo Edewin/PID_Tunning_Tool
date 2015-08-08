@@ -1,4 +1,4 @@
-﻿#include <xc.h>
+#include <xc.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -65,7 +65,7 @@ int ActualSpeed;
 int SpeedError;
 int DutyCycle;
 int SpeedIntegral;
-//*************************************************************
+/*************************************************************
 Low side driver table is as below. In this StateLoTable,
 the Low side driver is PWM while the high side driver is
 either on or off. This table is used in this exercise
@@ -143,14 +143,14 @@ int main(void)
 						Timer3 = TMR3;// read latest tmr3 value
 						TMR3 = 0;
 						Count = 0;
-						GetSpeed();// determine spped
+						GetSpeed();// determine speed
 					}
 				}
 			}
 			else // else S2 is pressed to stop motor
 			{
 				PWMCON1 = 0x0700;// disable PWM outputs
-				OVDCON = 0x0000; // overide PWM low.
+				OVDCON = 0x0000; // override PWM low.
 				Flags.RunMotor = 0;// reset run flag
 				while (S2)// wait for key release
 				DelayNmSec(10);
@@ -179,9 +179,9 @@ void InitADC10(void)
 }
 
 /********************************************************************
-InitMCPWM, intializes the PWM as follows:
+InitMCPWM, initializes the PWM as follows:
 1. FPWM = 16000 hz
-2. Independant PWMs
+2. Independent PWMs
 3. Control outputs using OVDCON
 4. Set Duty Cycle using PI algorithm and Speed Error
 5. Set ADC to be triggered by PWM special trigger
