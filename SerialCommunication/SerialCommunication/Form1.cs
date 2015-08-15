@@ -26,6 +26,8 @@ namespace SerialCommunication
 
         #region Variables
 
+        private static bool serialPortConnected = false;
+
         // buffer variable
         private string bufferSerial; 
         
@@ -39,8 +41,11 @@ namespace SerialCommunication
 
         private void serialPort1_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
         {
-            bufferSerial = serialPort1.ReadLine();
-            this.Invoke(new EventHandler(displayText));
+            if (serialPortConnected == true)
+            {
+                bufferSerial = serialPort1.ReadLine();
+                this.BeginInvoke(new EventHandler(displayText));
+            }
         }
 
 
@@ -54,7 +59,7 @@ namespace SerialCommunication
                 }
                 else
                 {
-            /*       chart1.Series[0].Points.AddXY(xCounter, Convert.ToDouble(Convert.ToString(setPoint.Value)));
+                   chart1.Series[0].Points.AddXY(xCounter, Convert.ToDouble(Convert.ToString(setPoint.Value)));
                     chart1.Series[1].Points.AddXY(xCounter, Convert.ToDouble(bufferSerial));
                     chart1.ChartAreas[0].AxisY.Maximum = Convert.ToDouble(bufferSerial) + 4000;
                     chart1.ChartAreas[0].AxisY.Minimum = Convert.ToDouble(bufferSerial) - 4000;
@@ -62,7 +67,7 @@ namespace SerialCommunication
                     {
                         chart1.ChartAreas[0].AxisX.Minimum = xCounter - 10;
                     }
-                    xCounter += 0.1;*/
+                    xCounter += 0.1;
                     textBox1.AppendText(Environment.NewLine + "RX:" + bufferSerial);
                 }
             }
@@ -151,6 +156,7 @@ namespace SerialCommunication
             {
                 serialPort1.Open();
                 textBox1.Text = "Connected";
+                serialPortConnected = true;
             }
             catch (Exception ex)
             {
@@ -167,6 +173,7 @@ namespace SerialCommunication
         {
             try
             {
+                serialPortConnected = false;
                 serialPort1.Close();
                 
                 textBox1.AppendText("\r\nDisconnected");
